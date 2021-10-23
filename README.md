@@ -1,6 +1,8 @@
 # Personal_Portfolio
 Fully responsive Personal portfolio page (freeCodeCamp last exercise)
 
+![gif page preview](Portfolio.gif)
+
 Fulfill the below user stories and get all of the tests to pass. Give it your own personal style.
 
 - User Story #1: My portfolio should have a welcome section with an id of welcome-section.
