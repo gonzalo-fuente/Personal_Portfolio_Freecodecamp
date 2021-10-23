@@ -1,0 +1,264 @@
+@import url(//db.onlinewebfonts.com/c/8cdbb48678e4418f22a2f507c2b975bd?family=Blanka);
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600;1,700;1,800&display=swap");
+
+/* MAIN VARIABLES */
+
+:root {
+  --xiketic: #03071eff;
+  --dark-sienna: #370617ff;
+  --rosewood: #6a040fff;
+  --dark-red: #9d0208ff;
+  --rosso-corsa: #d00000ff;
+  --vermilion: #dc2f02ff;
+  --persimmon: #e85d04ff;
+  --carrot-orange: #f48c06ff;
+  --orange-web: #faa307ff;
+  --selective-yellow: #ffba08ff;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* BODY SECTION */
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 2.5rem;
+  padding-top: 4.5rem;
+  margin-bottom: 2rem;
+}
+
+/* HEADER SECTION */
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  color: var(--white);
+  background-color: var(--dark-red);
+}
+
+#navbar ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 40px;
+}
+
+#navbar li {
+  font-size: 1.5rem;
+  margin: 20px 20px;
+}
+
+#navbar a:hover {
+  color: var(--selective-yellow);
+  transition: color 0.4s ease-out;
+}
+
+/* WELCOME SECTION */
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Blanka", sans-serif;
+  min-height: 100vh;
+  color: var(--selective-yellow);
+  background-color: var(--xiketic);
+}
+
+#welcome-section h1 {
+  font-size: 6vw;
+  font-weight: 500;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#welcome-section p {
+  font-size: 5vw;
+  font-weight: 300;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#welcome-section h2 {
+  font-size: 5vw;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--persimmon);
+  margin: 1rem 0;
+}
+
+/* SKILLS SECTION */
+
+#skills {
+  width: 100%;
+  color: var(--dark-red);
+  background-color: var(--orange-web);
+}
+
+#skills .flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 50vh;
+}
+
+#skills li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem;
+}
+
+#skills i {
+  margin-bottom: 2rem;
+}
+
+/* PROJECTS SECTION */
+
+#projects {
+  color: var(--white);
+  background-color: var(--dark-sienna);
+}
+
+#projects .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 0 100px;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+#projects .grid-container a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--xiketic);
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+
+#projects .grid-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#projects .grid-container p {
+  font-size: 1.5rem;
+  text-align: center;
+  width: 100%;
+  margin: 1.5rem 0;
+  transition: color 0.4s ease-out;
+}
+
+#projects .code {
+  color: var(--xiketic);
+  transition: color 0.4s ease-out;
+}
+
+#projects .grid-container a:hover .code,
+#projects .grid-container a:hover p {
+  color: var(--orange-web);
+}
+
+/* CONTACT SECTION */
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--selective-yellow);
+  background-color: var(--xiketic);
+}
+
+#contact ul {
+  padding-bottom: 4.5rem;
+}
+
+#contact li {
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+
+#contact i {
+  margin: 1rem;
+  font-size: 2rem;
+}
+
+/* MEDIA QUERIES SECTION */
+
+@media (max-width: 800px) {
+  #navbar li {
+    font-size: 1rem;
+    margin: 20px 10px;
+  }
+
+  #welcome-section {
+    min-height: 80vh;
+  }
+
+  #welcome-section h1 {
+    font-size: 10vw;
+  }
+
+  #welcome-section p,
+  #welcome-section h2 {
+    font-size: 8vw;
+  }
+
+  .subtitle {
+    font-size: 2rem;
+  }
+
+  #skills li {
+    font-size: 1.2rem;
+  }
+
+  #projects .grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #projects .grid-container a {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  #projects .grid-container p {
+    font-size: 1.2rem;
+  }
+  #contact li {
+    font-size: 1.2rem;
+  }
+
+  #contact i {
+    font-size: 1.5rem;
+  }
+}
